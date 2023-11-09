@@ -90,13 +90,15 @@ function generateColumns() {
         );
         fill(sliderColor);
         rect(x, y, w, h);
-        counter++;
-        /*for (let i = 0; i < 10; i ++) {
-        ellipse(x, y, w, h);
+        
+        /*fill(sliderColor);
+        for (let i = 0; i < 10; i ++) {
+        ellipse(y, x, w, h);
         rotate(PI/5);
+        }*/
 
         counter++;
-      }*/
+      }
     }
   }
 }
