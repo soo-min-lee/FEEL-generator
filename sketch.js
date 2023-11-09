@@ -89,7 +89,7 @@ function generateColumns() {
           sliderColors[i][2]
         );
         fill(sliderColor);
-        rect(x, y, w, h);
+        ellipse(x, y, w, h);
 
         counter++;
       }
