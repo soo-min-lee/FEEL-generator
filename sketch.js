@@ -89,12 +89,14 @@ function generateColumns() {
           sliderColors[i][2]
         );
         fill(sliderColor);
-        for (let i = 0; i < 10; i ++) {
+        rect(x, y, w, h);
+        counter++;
+        /*for (let i = 0; i < 10; i ++) {
         ellipse(x, y, w, h);
         rotate(PI/5);
 
         counter++;
-      }
+      }*/
     }
   }
 }
