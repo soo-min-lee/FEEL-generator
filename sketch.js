@@ -1,16 +1,16 @@
 let fontR;
 let fontB;
 let sliders = [];
-let sliderColors = [
-  [255, 77, 0], // Red Orange
-  [255, 62, 181], // Magenta Pink
-  [255, 255, 0], // Yellow
-  [255, 255, 255], // White
-  [0, 166, 81], // Green
-  [0, 174, 239], // Cyan
-  [46, 49, 146], // Indigo
-  [0, 0, 0], // Black
-];
+// let sliderColors = [
+//   [255, 77, 0], // Red Orange
+//   [255, 62, 181], // Magenta Pink
+//   [255, 255, 0], // Yellow
+//   [255, 255, 255], // White
+//   [0, 166, 81], // Green
+//   [0, 174, 239], // Cyan
+//   [46, 49, 146], // Indigo
+//   [0, 0, 0], // Black
+// ];
 let sliderImages = [];
 
 function preload() {
@@ -49,7 +49,7 @@ function setup() {
   let labelX = 10;
   let labelY = 40;
 
-  for (let i = 0; i < sliderColors.length; i++) {
+  for (let i = 0; i < sliderLabels.length; i++) {
     // Create a slider
     let slider = createSlider(0, 5, 0);
     slider.position(10 + i * 150, 50);
@@ -181,7 +181,7 @@ function keyPressed() {
     let labelY = 40;
 
     translate(30, -73);
-    for (let i = 0; i < sliderColors.length; i++) {
+    for (let i = 0; i < sliderLabels.length; i++) {
       // Display the label for the slider using the preloaded font
       fill(0); // Set the text color to black
       text(sliderLabels[i], labelX, labelY);
